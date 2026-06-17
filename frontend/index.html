@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitaRig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" />
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gear.html">Gear</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="hero">
+        <h1>Vind jouw sound</h1>
+        <p>Zoek welke gear jouw idolen gebruiken</p>
+        <input type="text" id="search" placeholder="Zoek artiesten..." />
+      </section>
+
+      <section class="artists-grid" id="artists-grid"></section>
+    </main>
+
+    <script type="module" src="js/pages/index.js"></script>
+  </body>
+</html>

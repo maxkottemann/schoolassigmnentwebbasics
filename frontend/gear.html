@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitaRig - Gear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" />
+      <div class="nav-links">
+           <a href="index.html">Home</a>
+        <a href="gear.html">Gear</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <main class="main">
+      <section class="hero">
+        <h1>Alle Gear</h1>
+        <p>Zoek gitaren, versterkers, pedalen en meer</p>
+        <div class="gear-filters">
+          <input
+            type="text"
+            id="search"
+            placeholder="Zoek op naam"
+          />
+          <select id="type-filter">
+            <option value="">Alle types</option>
+            <option value="guitar">Gitaar</option>
+            <option value="amp">Versterker</option>
+            <option value="pedal">Pedaal</option>
+            <option value="strings">Snaren</option>
+            <option value="other">Overig</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="artists-grid" id="gear-grid"></section>
+    </main>
+
+    <script type="module" src="js/pages/gear.js"></script>
+  </body>
+</html>

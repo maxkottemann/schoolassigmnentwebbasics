@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitaRig - Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" />
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gear.html">Gear</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="admin-tabs">
+        <button class="tab active" data-tab="artists">Artiesten</button>
+        <button class="tab" data-tab="gear">Gear</button>
+        <button class="tab" data-tab="rigs">Rigs</button>
+      </div>
+
+      <div id="tab-artists" class="tab-content">
+        <div class="section-header">
+          <h2>Artiesten</h2>
+          <button class="btn" id="btn-add-artist">+ Artiest toevoegen</button>
+        </div>
+        <div id="artists-list"></div>
+      </div>
+
+      <div id="tab-gear" class="tab-content hidden">
+        <div class="section-header">
+          <h2>Gear</h2>
+          <button class="btn" id="btn-add-gear">+ Gear toevoegen</button>
+        </div>
+        <div id="gear-list"></div>
+      </div>
+
+      <div id="tab-rigs" class="tab-content hidden">
+        <div class="section-header">
+          <h2>Rigs</h2>
+          <button class="btn" id="btn-add-rig">+ Add Rig</button>
+        </div>
+        <div id="rigs-list"></div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3 id="modal-title">Add</h3>
+          <button id="modal-close">✕</button>
+        </div>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/pages/admin.js"></script>
+  </body>
+</html>
